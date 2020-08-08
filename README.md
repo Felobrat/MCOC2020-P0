@@ -12,6 +12,6 @@
 * Almacenamiento: 1 disco duro SSD 960 GB
 
 # Desempeño MATMUL
-![DESEMPEÑO MATMUL](https://user-images.githubusercontent.com/69157203/89699418-c2cc2500-d8f4-11ea-8b92-b13d88f78c10.png)
+![DESEMPEÑO MATMUL](https://user-images.githubusercontent.com/69157203/89699750-fa3bd100-d8f6-11ea-90eb-b08ded33ba88.png)
 
 * Difieren bastante, analizando el primer gráfico, mi promedio de desempeño para matrices menores a 5 es de 0.1 s, mientras que el del profesor es de 0.1 ms. En el minimo alcanado por mi computador (cerca de las 12 a 15 iteraciones) mi minimo es cerca deñ dpble que el del profesor
