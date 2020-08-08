@@ -10,3 +10,7 @@
 * Hilos: 4
 * Memoria RAM: 8 (2) DDR3 
 * Almacenamiento: 1 disco duro SSD 960 GB
+
+# Desempeño MATMUL
+
+
