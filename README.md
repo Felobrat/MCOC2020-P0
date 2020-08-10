@@ -22,7 +22,7 @@
 
 * Se uso Python v3.8
 
-* Se uso NumPy v 1.19 incluido en Spyder (anaconda3).
+* Se uso NumPy v 1.18.5 incluido en Spyder (anaconda3).
 
 * Durante el procesamiento usaron los cuatro nucleos lógicos, cuando uno se veia saturado, entraba otro. Imagen explicativa a continuacion. En ningun momento se usaron completamente los 4 nucleos.
 
