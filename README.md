@@ -5,10 +5,11 @@
 * Modelo: X556UAK
 * Sistema Operativo: Windows 10 Home
 * Procesador: Intel(R) Core(TM) i5-7200U CPU @2.50Hz 2.71Hz
+* Caché: 3MB
 * Arquitectura: 64bit
 * Nucleos: 2
 * Hilos: 4
-* Memoria RAM: 8 (2) DDR3 
+* Memoria RAM: 8GB (2) DDR3 
 * Almacenamiento: 1 disco duro SSD 960 GB
 
 # Desempeño MATMUL
@@ -27,3 +28,16 @@
 * Durante el procesamiento usaron los cuatro nucleos lógicos, cuando uno se veia saturado, entraba otro. Imagen explicativa a continuacion. En ningun momento se usaron completamente los 4 nucleos.
 
 ![image](https://user-images.githubusercontent.com/69157203/89700215-7daaf180-d8fa-11ea-8468-e95765262303.png)
+
+# Desempeño MIMATMUL
+
+* Los graficos son bastante similares. difieren en el tiempo que se demoran en procesar la misma cantidad de información. Mi proceso para una matriz de 600x600 se demoro cerca de cinco minutos en cada corrida. De hacerlo para matrices más grandes hubiese estado mucho tiempo calculando. por otro lado,los tiempos de procesamiento minimos, fueron similares, al igual que el uso de memoria.
+
+* Se pueden deber principalmente con el hardware, el procesador debe ser levemente mejor al mio y la memoria RAM, debe tener más capacidad. Esto genera que procese informacion más rapido y no se saturen tan rapido las memorias y cache.
+
+* el Grafico de uso de memoria, no es lineal dado que van entrando al porcesamiento distintos elementos una vez que se ven sobrepasados en capacidad de procesamiento. Cuando van pasando informacion de un tipo a otro, se generan saltos, los cuales son coincidentes con la saturacion de la memoria que se esta usando para procesar, además a medida que van trabajando, se van incorporando más nucleos del procesador. Mientras más sobrepasado el computador, entra a memoria más lentas en el porcesamiento, lo que genera un aumento no lineal en log-log entre tiempo de procesamiento y tamaño de las matrices. No asi el grafico de memoria con tamaño de matices, los cuales son lineales en log-log.
+
+* Version de Python: v3.8
+* Numpy V 1.18.5
+
+* Se ve que se usan los cuatro nucleos en la imagen a continuacio.
