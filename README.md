@@ -31,6 +31,8 @@
 
 # Desempeño MIMATMUL
 
+![DESEMPEÑO MIMATMUL](https://user-images.githubusercontent.com/69157203/89843741-978d4400-db47-11ea-8b45-5b9d49805ab0.png)
+
 * Los graficos son bastante similares. difieren en el tiempo que se demoran en procesar la misma cantidad de información. Mi proceso para una matriz de 600x600 se demoro cerca de cinco minutos en cada corrida. De hacerlo para matrices más grandes hubiese estado mucho tiempo calculando. por otro lado,los tiempos de procesamiento minimos, fueron similares, al igual que el uso de memoria.
 
 * Se pueden deber principalmente con el hardware, el procesador debe ser levemente mejor al mio y la memoria RAM, debe tener más capacidad. Esto genera que procese informacion más rapido y no se saturen tan rapido las memorias y cache.
@@ -41,3 +43,5 @@
 * Numpy V 1.18.5
 
 * Se ve que se usan los cuatro nucleos en la imagen a continuacio.
+
+![CPU](https://user-images.githubusercontent.com/69157203/89843744-9825da80-db47-11ea-8623-910fc5409f42.png)
