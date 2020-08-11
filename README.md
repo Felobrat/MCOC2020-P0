@@ -1,15 +1,19 @@
 # MCOC2020-P0
 
 # Mi Computador
+* Año 2015
 * Marca: ASUS
 * Modelo: X556UAK
 * Sistema Operativo: Windows 10 Home
-* Procesador: Intel(R) Core(TM) i5-7200U CPU @2.50Hz 2.71Hz
+* Procesador: Intel(R) Core(TM) i5-7200U CPU @2.50Hz 2.71Hz 
+* Velocodad Maxima: 3.10Hz
+* Tarjeta Grafica: Gráficos HD Intel® 620
+* Resolucio: 1366x768
 * Caché: 3MB
 * Arquitectura: 64bit
 * Nucleos: 2
 * Hilos: 4
-* Memoria RAM: 8GB (2) DDR3 
+* Memoria RAM: 8GB (2) DDR4 
 * Almacenamiento: 1 disco duro SSD 960 GB
 
 # Desempeño MATMUL
