@@ -8,7 +8,7 @@
 * Procesador: Intel(R) Core(TM) i5-7200U CPU @2.50Hz 2.71Hz 
 * Velocodad Maxima: 3.10Hz
 * Tarjeta Grafica: Gráficos HD Intel® 620
-* Resolucio: 1366x768
+* Resolucion: 1366x768
 * Caché: 3MB
 * Arquitectura: 64bit
 * Nucleos: 2
@@ -46,6 +46,6 @@
 * Version de Python: v3.8
 * Numpy V 1.18.5
 
-* Se ve que se usan los cuatro nucleos en la imagen a continuacio.
+* Se ve que se usan los 2 nucleos y se ven los cuatro subprocesos en la imagen a continuacio.
 
 ![CPU](https://user-images.githubusercontent.com/69157203/89843744-9825da80-db47-11ea-8623-910fc5409f42.png)
