@@ -27,6 +27,11 @@
  - Tarjeta Gráfica
     - Intel(R) HD Graphics 620
     - Resolucion: 1366x768 
+
+ - Tarjeta de red wi-fi:
+    - Descripcion: Qualcomm Atheros AR956x Wireless Network Adapter
+    - Direccion MAC: 58:00:e3:3a:a2:a5
+    - Velocidad de vinculo: 144/72 (Mbps)
     
   - Disco 1:
     - Marca Kingstone
