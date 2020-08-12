@@ -1,20 +1,38 @@
 # MCOC2020-P0
 
 # Mi Computador
-* Año 2015
+* Tipo: Notebook
+* Año: 2015
 * Marca: ASUS
 * Modelo: X556UAK
 * Sistema Operativo: Windows 10 Home
-* Procesador: Intel(R) Core(TM) i5-7200U CPU @2.50Hz 2.71Hz 
-* Velocodad Maxima: 3.10Hz
-* Tarjeta Grafica: Gráficos HD Intel® 620
-* Resolucion: 1366x768
-* Caché: 3MB
-* Arquitectura: 64bit
-* Nucleos: 2
-* Hilos: 4
-* Memoria RAM: 8GB (2) DDR4 
-* Almacenamiento: 1 disco duro SSD 960 GB
+
+* Hardware
+  - Procesador: Intel(R) Core(TM) i5-7200U CPU @2.50Hz 2.71Hz 
+  - Frecuencia Base: 2.50 GHz 
+  - Frecuencia Turbo Máxima: 3.10 GHz
+  - Nucleos: 2
+  - Hilos: 4
+  - Arquitectura: x86-64bit
+  - Cachés del Procesador:
+    - L1d: 32 KB
+    - L1i: 32 KB
+    - L2:  256 KB
+    - L3:  3 MB
+  - Memoria:
+    - Memoria RAM (1): 8GB
+    - Tipo: DDR4
+    - Frecuencia: 1067 MHz 
+    
+ - Tarjeta Gráfica
+    - Intel(R) HD Graphics 620
+    - Resolucion: 1366x768 
+    
+  - Disco 1:
+    - Marca Kingstone
+    - Tpo SSD
+    - Tamaño: 1 disco duro SSD 960 GB
+    - Particiones: 1
 
 # Desempeño MATMUL
 ![DESEMPEÑO MATMUL](https://user-images.githubusercontent.com/69157203/89699750-fa3bd100-d8f6-11ea-90eb-b08ded33ba88.png)
