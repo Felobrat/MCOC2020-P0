@@ -72,3 +72,16 @@
 * Se ve que se usan los 2 nucleos y se ven los cuatro subprocesos en la imagen a continuacio.
 
 ![CPU](https://user-images.githubusercontent.com/69157203/89843744-9825da80-db47-11ea-8623-910fc5409f42.png)
+
+# Desempeño INV
+
+* Según los programas creados, las memorias utilizadas en mi  computador por los distintos tipos de datos son los siguientes:
+  - Half: float16 - 4 bytes
+  - Single: float32 - 4 bytes
+  - Double: float64 - 8 bytes
+  - Longdouble: float64 - 8 bytes
+  
+* Analizando la eficiencia de los algoritmos utilizando las funciones NumPy con los distintos tipos de datos, se tiene lo siguiente:
+  - NumPy-
+  
+  
