@@ -82,6 +82,53 @@
   - Longdouble: float64 - 8 bytes
   
 * Analizando la eficiencia de los algoritmos utilizando las funciones NumPy con los distintos tipos de datos, se tiene lo siguiente:
-  - NumPy-
+  - CASO 1 - NumPy: 
   
+  ![RENDIMIENTO CASO 1](https://user-images.githubusercontent.com/69157203/90080032-8c691e00-dcd7-11ea-8694-4cac4f54e627.png)
   
+  Se observa que el uso de memoria para los datos double, ocupan mayor memoria que en single. En cuanto al tiempo, se observa que el single tiene máyor variabilidad que lo que tiene double. Por otro lado, los tipos de dato half y longdouble no son soportados por numpy para invertir la matriz laplaceana.
+  
+  - CASO 2 - SciPy - False:
+  
+  ![RENDIMIENTO CASO 2](https://user-images.githubusercontent.com/69157203/90080278-3183f680-dcd8-11ea-8ac3-6f36dfba6c3c.png)
+
+Se observa que la memoria utilizada por el longdouble es la mayor de todas, decreciendo para double, single y half respectivamente. En cuanto al tiempo, la mas estable en variabilidad de tiempo fue single, la que no presentó peaks inesperados.
+  
+  - CASO 3 - Scipy - True:
+  
+![RENDIMIENTO CASO 3](https://user-images.githubusercontent.com/69157203/90080615-11a10280-dcd9-11ea-9109-373b62e89df5.png)
+  
+  Se observa que la memoria utilizada por el longdouble es la mayor de todas, decreciendo para double, single y half respectivamente. En cuanto al tiempo, la mas estable en variabilidad de tiempo fue double, la que presentó menos peaks inesperados que el resto. Por otro lado, comparando los graficos con el caso 2, se tiene que hay mucha mayor variabilidad en la tendencia del recorrido del caso 3 en el uso del tiempo para los distintos tipos de dato, lo que señala que va moviendo datos de un lado a otro para intentar mejorar el rendimiento del algoritmo.
+  
+* Analizando los algoritmos para distintos tipos de datos.
+
+  - HALF:
+  
+  ![Comparacion RENDIMIENTO half](https://user-images.githubusercontent.com/69157203/90080831-aa378280-dcd9-11ea-87e5-8851199cb25d.png)
+  
+  Se observa que los algoritmos son similares en el tiempo para datos de tipo half. El uso de memoria es el mismo dado el tipo de dato.
+  
+  - SINGLE
+  
+  ![Comparacion RENDIMIENTO single](https://user-images.githubusercontent.com/69157203/90080872-c4716080-dcd9-11ea-88f2-cd9230025b73.png)
+
+  Se observa que presenta una mayor variabilidad en el tiempo para el CASO 3. El CASO 1 tambien presenta una variabilidad en el tiempo y mayor demora en matrices grandes en comparacion con los otros casos. Resulta el más estable en este caso el CASO 2. El uso de memoria es el mismo dado el tipo de dato.
+  
+  - DOUBLE
+  
+  ![Comparacion RENDIMIENTO double](https://user-images.githubusercontent.com/69157203/90080879-c9361480-dcd9-11ea-9f2a-051a9451eb27.png)
+
+Los CASOS 1 y 2 son muy similares en su desempeño en el tiempo, mientras que el CASO 3 presenta gran variabilidad en algunos casos de matrices de tamaño medio. El uso de memoria es el mismo dado el tipo de dato.
+  
+  - LONGDOUBLE
+  
+  ![Comparacion RENDIMIENTO longdouble](https://user-images.githubusercontent.com/69157203/90080889-cd623200-dcd9-11ea-8c8b-ae06302b9799.png)
+  
+  El CASO 3 presenta una considerable demora en matrices de tamaño medio, pero se equipara en las de gran tamaño en el desempeño del CASO 2. El uso de memoria es el mismo dado el tipo de dato.
+ 
+ 
+* Metodo de Inversion de NumPy y Scipy.
+  - Yo considero que ambos utilizan el metodo LU con ajuste de Gauss-Jordan si no pueden por LU. La diferencia creo que está en las verificaciones que usa SciPy en la verificacion y en la optimización del algoritmo.
+  
+* Incidencia del Paralelismo y el Caché.
+  - Considero que el paralelismo de los nucleos incide en dar potencia cuando estos estan optimizados para esa forma de proceso, pero no son tan eficientes cuando se debe operar con procesos que no son tan sofisticados. Ahi, el caché cobra importancia, donde empieza a procesar por paquetes de datos, procesos que requieren mucha memoria. EN conclusion, lo mejor es tener nucleos en paralelo, pero de no poder correr procesos en nucleos paralelos, el caché complementa esa falta de potencia y la calcula de forma paralela descongestionando el sistema. Se observa que los peaks pueden ser formas de optimizacion del algoritmo para que sean trabajados en paralelo, lo que traducido seria que el sistema trata de optimizar el proceso mandandolo al cache para que lo procese más rapido.
