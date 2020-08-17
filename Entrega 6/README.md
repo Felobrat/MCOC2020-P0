@@ -22,6 +22,6 @@ En esta entrega, se evalua el desempeño de distintas funciones para resolver un
 
    Se comentará más adelante.
    
-* Resultado Rendimiento de distintas Funciones Ax=b
+* Resultado del Rendimiento de distintas Funciones Ax=b
 
 ![RENDIMIENTO_inv](https://user-images.githubusercontent.com/69157203/90411674-1ae3f380-e07a-11ea-8a7d-b609f4fe53a7.png)
