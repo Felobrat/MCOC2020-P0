@@ -20,4 +20,4 @@ En esta entrega, se evalua el desempeño de distintas funciones para resolver un
    
 * Resultado Rendimiento de distintas Funciones Ax=b
 
-![RENDIMIENTO_inv_VS_npSolve](https://user-images.githubusercontent.com/69157203/90409655-6fd23a80-e077-11ea-94f8-e84e07d7493f.png)
+![RENDIMIENTO_inv](https://user-images.githubusercontent.com/69157203/90411674-1ae3f380-e07a-11ea-8a7d-b609f4fe53a7.png)
