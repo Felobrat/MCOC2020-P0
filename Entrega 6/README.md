@@ -12,9 +12,13 @@ En esta entrega, se evalua el desempeño de distintas funciones para resolver un
 
    * El rendimiento del CPU (1) y Memoria RAM (2) usada, se observa en los graficos a continuación.
   
-  (1) ![cpu2](https://user-images.githubusercontent.com/69157203/90409161-cd19bc00-e076-11ea-9945-8193cce19058.png)
+  (1) 
+  
+  ![cpu2](https://user-images.githubusercontent.com/69157203/90409161-cd19bc00-e076-11ea-9945-8193cce19058.png)
 
-  (2) ![ram2](https://user-images.githubusercontent.com/69157203/90409167-cee37f80-e076-11ea-98de-b31951696f02.png)
+  (2) 
+  
+  ![ram2](https://user-images.githubusercontent.com/69157203/90409167-cee37f80-e076-11ea-98de-b31951696f02.png)
 
    Se comentará más adelante.
    
